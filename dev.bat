@@ -1,2 +1,2 @@
-start cmd /k go run ./backend
+start cmd /c go run ./backend
 yarn --cwd ./frontend dev
