@@ -16,7 +16,7 @@ go get github.com/webview/webview_go
 ```cmd
 yarn create vite frontend
 
-# or
+:: or
 
 npm create vite@latest frontend
 ```
@@ -88,7 +88,8 @@ func start() {
 4. Start the dev server and compile the program.
 
 ```cmd
-go run ./backend
+:: dev.bat
+start cmd /c go run ./backend
 yarn --cmd ./frontend dev
 ```
 
@@ -106,6 +107,7 @@ export default defineConfig({
 ```
 
 ```cmd
+:: build.bat
 rmdir /s /q "./build"
 mkdir build
 go build -C ./backend -o ../build -ldflags -H=windowsgui -tags release
